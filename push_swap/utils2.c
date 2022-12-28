@@ -32,9 +32,6 @@ void	smart_rotate_a(t_list *data, int value)
 
 void	find_small_pb(t_list *data, int numberidx)
 {
-	int	i;
-
-	i = 0;
 	while (data->stacka[0] != data->fakesorted[numberidx])
 		smart_rotate_a(data, data->fakesorted[numberidx]);
 	pb(data);
