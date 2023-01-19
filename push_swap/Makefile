@@ -33,7 +33,7 @@ $(NAME): $(OBJS)
 	@$(CC) $(FLAGS) -o $(NAME) $(OBJS)
 
 .c.o:
-	@echo "$(CYAN)Complining: $<"
+	@echo "$(CYAN)Compiling: $<"
 	@$(CC) $(FLAGS) -c $< -o $(<:.c=.o)
 
 clean:
